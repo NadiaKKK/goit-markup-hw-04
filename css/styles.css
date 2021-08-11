@@ -126,6 +126,16 @@ nav {
   letter-spacing: 0.02em;
 }
 
+.contact-mail:focus,
+.contact-mail:hover {
+  fill: var(--accent-color);
+}
+
+.contact-phone:focus,
+.contact-phone:hover {
+  fill: var(--accent-color);
+}
+
 .contacts :hover,
 .contacts :focus {
   color: var(--accent-color);
