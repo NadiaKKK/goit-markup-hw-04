@@ -151,15 +151,22 @@ nav {
 }
 
 .contact-mail {
-  fill: var(--primary-text-color);
-  width: 16px;
-  height: 12px;
+  fill: currentColor;
+  width: 20px;
+  height: 16px;
+  margin-right: 10px;
 }
 
 .contact-phone {
-  fill: var(--primary-text-color);
-  width: 10px;
-  height: 16px;
+  fill: currentColor;
+  width: 16px;
+  height: 18px;
+  margin-right: 10px;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
 }
 
 .section {
@@ -227,6 +234,42 @@ li .list :not(:last-child) {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+.team-social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.team-social-link {
+  display: flex;
+  height: 44px;
+  width: 44px;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-icon {
+  fill: #afb1b8;
+  width: 20px;
+  height: 20px;
+}
+
+.team-social-link:focus,
+.team-social-link:hover {
+  background-color: var(--accent-color);
+}
+
+.team-social-link:focus svg,
+.team-social-link:hover svg {
+  fill: #fff;
+}
+
+.team-social-links .item + .item {
+  margin-left: 10px;
 }
 
 /* Our Clients*/
@@ -390,6 +433,23 @@ ul {
   letter-spacing: 0.03em;
 }
 
+.feature-item-icon {
+  display: flex;
+  width: 70px;
+  height: 70px;
+}
+
+.feature-item > div {
+  display: flex;
+  background-color: #f5f4fa;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Button */
 
 .button {
@@ -535,7 +595,6 @@ a {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
-
   margin-bottom: 20px;
 }
 
